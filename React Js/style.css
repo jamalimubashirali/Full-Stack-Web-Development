@@ -1,0 +1,43 @@
+.nav{
+    display: flex;
+    padding: 4px;
+    justify-content: space-between;
+    align-items: center;
+    color :white;
+}
+
+.nav-item{
+    list-style: none;
+    display: flex;
+}
+
+.nav-item > li{
+    padding: 8px;
+}
+
+.image{
+    width: 60px;
+}
+
+.footer{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.Main{
+    padding: 15px;
+    min-height:calc(100vh - 211px - 1px);
+    background-color: black;
+    color: white;
+} 
+
+.Main > ol > li{
+    padding-bottom: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

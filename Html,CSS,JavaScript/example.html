@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//         let answer = prompt('What is your name?');
+// if (typeof(answer) === 'string') {
+//     var h1 = document.createElement('h1')
+//     h1.innerText = answer;
+//     document.body.innerText = '';
+//     document.body.appendChild(h1);
+//}
+// var h1 = document.createElement('h1')
+// h1.innerText = "Type into the input to make this text change"
+
+// var input = document.createElement('input')
+// input.setAttribute('type', 'text')
+
+// document.body.innerText = '';
+// document.body.appendChild(h1);
+// document.body.appendChild(input);
+// var h1 = document.createElement('h1')
+// h1.innerText = "Type into the input to make this text change"
+
+// var input = document.createElement('input')
+// input.setAttribute('type', 'text')
+
+// document.body.innerText = '';
+// document.body.appendChild(h1);
+// document.body.appendChild(input);
+
+// input.addEventListener('change', function() {
+//     console.log(input.value)
+// })
+// var h1 = document.createElement('h1')
+// h1.innerText = "Type into the input to make this text change"
+
+// var input = document.createElement('input')
+// input.setAttribute('type', 'password')
+
+// document.body.innerText = '';
+// document.body.appendChild(h1);
+// document.body.appendChild(input);
+
+// input.addEventListener('change', function() {
+//     h1.innerText = input.value
+// })
+var h1 = document.createElement('h1')
+h1.innerText = "Type this down"
+
+var input = document.createElement('input')
+input.setAttribute('type','password')
+
+document.body.innerText='';
+document.body.appendChild(h1);
+document.body.appendChild(input);
+
+input.addEventListener('change',function(){
+    var br = document.createElement('br')
+    document.body.appendChild(br)
+    var i = document.createElement('i')
+    i.innerText = input.value
+    document.body.appendChild(i)
+})
+    </script>
+</body>
+</html>

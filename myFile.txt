@@ -1,0 +1,10 @@
+Hello world
+My name is mubashir ali
+I live in larkana 
+I study in jamshoro
+I am an undergraduate student
+I am studying software engineering
+my section is two
+my room number is 214
+I live in rashidi hostel
+
