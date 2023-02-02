@@ -85,8 +85,6 @@ nav img{
     content: normal;
     padding : 80px;
     margin :auto;
-    justify-content: center;
-    align-items: center;
 }
 #sec_3 .main{
     background: transparent;
@@ -139,4 +137,33 @@ nav img{
 }
 #sec_3 .btn button a:hover{
     color: aliceblue;
+}
+#sec_4{
+    background-image: linear-gradient(blue,white);
+    content: normal;
+    display: flex;
+    padding : 50px;
+    margin :auto;
+}
+#sec_4 .main{
+    margin-top: 50px;
+    margin-inline: 160px;
+}
+#sec_4 .main h1{
+    float: left;
+    font-size: 30px;
+}
+
+#sec_4 .main{
+    display: flex;
+    margin-bottom: 200px;
+}
+#sec_4 .main .con{
+    margin-inline: 40px;
+}
+#sec_4 .main .con h4{
+    padding-bottom: 13px;
+}
+#sec_4 .main .con p{
+    padding-bottom: 3px;
 }
