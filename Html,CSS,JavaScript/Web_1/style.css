@@ -1,0 +1,142 @@
+*{  
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+    max-height: 100px;
+    content:normal;
+}
+nav img{
+    mix-blend-mode: multiply;
+    width:30%;
+    height: 5%;
+}
+#sec_1{
+    background-image: linear-gradient(white,blue);
+    content: normal;
+    display: flex;
+    padding : 50px;
+    margin :auto;
+}
+#sec_1 .content p{
+    padding-top: 150px;
+    font-size: 60px;
+    padding-right: 70px;
+}
+#sec_1 .content{
+    padding-inline: 70px;
+}
+#sec_1 .content p span{
+    font-weight: bolder;
+}
+#sec_1 .content button a{
+    text-decoration: none;
+    color: black;
+}
+#sec_1 .content button{
+    background: transparent;
+    margin-left: 35px;
+    margin-top: 30px;
+    padding-inline: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+#sec_1 .content button:hover{
+    background-color: black;
+}
+#sec_1 .content button a:hover{
+    color:azure;
+}
+#sec_1 img{
+    margin: 0%;
+    float: right;
+    width: 550px;
+    padding-right: 90px;
+}
+#sec_2{
+    background-image: linear-gradient(blue,white);
+    content: normal;
+    display: flex;
+    padding : 50px;
+    margin :auto;
+}
+#sec_2 img{
+    margin: 0%;
+    margin-top: 80px;
+    float: right;
+    width: 600px;
+    padding-right: 10px;
+    border-top-right-radius: 80px;
+}
+#sec_2 .content h5{
+    padding-top: 140px;
+    padding-left: 5px;
+    font-size: 40px;
+}
+#sec_2 .content p{
+    padding-top: 40px;
+    text-align: justify;
+    font-size: 25px;
+    padding-right: 70px;
+}
+#sec_3{
+    background-image: linear-gradient(white,blue);
+    content: normal;
+    padding : 80px;
+    margin :auto;
+    justify-content: center;
+    align-items: center;
+}
+#sec_3 .main{
+    background: transparent;
+    content: normal;
+    display: flex;
+    padding : 50px;
+    margin :auto;
+}
+.card{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-inline: 60px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.card img{
+    padding-bottom: 20px;
+    width: 200px;
+    border-top-right-radius: 20px;
+}
+.card h3{
+    text-transform: capitalize;
+    padding: 20px;
+}
+#sec_3 h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 80px;
+}
+#sec_3 .btn{
+    text-align: center;
+}
+#sec_3 .btn button{
+    
+    background: transparent;
+    margin-left: 35px;
+    margin-top: 3px;
+    padding-inline: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
+}
+#sec_3 button a{
+    text-decoration: none;
+    color: black;
+}
+#sec_3 .btn button:hover{
+    background-color: black;
+}
+#sec_3 .btn button a:hover{
+    color: aliceblue;
+}
