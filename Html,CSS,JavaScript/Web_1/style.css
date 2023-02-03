@@ -1,5 +1,6 @@
 *{  
     margin: 0px;
+    box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav{
@@ -166,4 +167,14 @@ nav img{
 }
 #sec_4 .main .con p{
     padding-bottom: 3px;
+}
+
+@media screen and (max-width = 600px){
+    #sec_1{
+        overflow: hidden;
+        background-image: linear-gradient(white,blue);
+        content: normal;
+        display: inline;
+        padding : 50px;
+    }
 }
