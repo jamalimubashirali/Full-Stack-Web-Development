@@ -174,7 +174,6 @@ nav img{
         overflow: hidden;
         background-image: linear-gradient(white,blue);
         content: normal;
-        display: inline;
         padding : 50px;
     }
 }
