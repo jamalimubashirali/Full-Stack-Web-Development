@@ -50,20 +50,21 @@
 }
 
 .selection{
+    height:100%;
     width: 60px;
     background-color: #edebeb;
+    border: none;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
-    height:100%
+    
 }
 .selection:hover{
     background-color:#bfbfbf;
 }
 
 .search-bar{
+    height: 100%;
     width: 500px;
-    margin-top: 0.5px;
-    margin-bottom: 0.55px;
     font-size: 1rem;
     border: none;
 }
@@ -104,3 +105,47 @@
     margin-inline: 3px;
     padding-inline: 3px;
 }
+
+.lover-navbar{
+    height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lover-nav{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    align-items: center;
+    padding-inline-start: 0px;
+}
+
+li{
+    padding: 8px;
+    margin-inline-start: 3px;
+    font-size: 0.85rem;
+    font-weight: 1rem;
+}
+
+.all{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero{
+    height: 350px;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(./Assets/hero_image.jpg);
+    background-size: cover;
+    overflow: visible;
+    z-index: 20;
+}
+
+
+
+
