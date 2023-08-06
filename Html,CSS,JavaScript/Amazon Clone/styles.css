@@ -146,6 +146,46 @@ li{
     z-index: 20;
 }
 
+.cards-section{
+    background-color: #e2e7e6;
+}
+
+.main-div{
+    padding: 22px;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    height: 420px;
+    width: 290px;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.card-image{
+    height: 300px;
+    width: 250px;
+    margin: 6px 0px 17px 20px;
+}
+
+.card-heading{
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.card-link a{
+    text-decoration: none;
+    color:#007185; 
+    font-size:0.8rem; 
+    font-weight:600;
+    margin-left: 20px;
+}
 
 
 
