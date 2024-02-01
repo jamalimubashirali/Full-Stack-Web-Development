@@ -6,5 +6,5 @@ class myclass:
         print(self.a)
         print(self.b)
         print(self.c)
-m = myclass()
-m.myfun()
+me = myclass()
+me.myfun()
