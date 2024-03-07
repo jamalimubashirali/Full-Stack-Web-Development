@@ -9,33 +9,45 @@
 <body>
     <div class="main-div">
         <h1>Personal Calculator</h1>
-        <input type="text" name="display">
+        <input type="text" id="output">
         <div class="numbers">
             <div class="operators">
-                <button type="button">+</button>
-                <button type="button">-</button>
-                <button type="button">*</button>
-                <button type="button">/</button>
+                <button type="button" onclick="appendToOutput('+')">+</button>
+                <button type="button" onclick="appendToOutput('-')">-</button>
+                <button type="button" onclick="appendToOutput('*')">*</button>
+                <button type="button" onclick="appendToOutput('/')">/</button>
             </div>
             <div>
-                <button type="button">1</button>
-                <button type="button">2</button>
-                <button type="button">3</button>
-                <button type="button">4</button>
+                <button type="button" value='1' onclick="appendToOutput(1)">1</button>
+                <button type="button" value='2' onclick="appendToOutput(2)">2</button>
+                <button type="button" value='3' onclick="appendToOutput(3)">3</button>
+                <button type="button" value='4' onclick="appendToOutput(4)">4</button>
             </div>
             <div>
-                <button type="button">5</button>
-                <button type="button">6</button>
-                <button type="button">7</button>
-                <button type="button">8</button>
+                <button type="button" value='5' onclick="appendToOutput(5)">5</button>
+                <button type="button" value='6' onclick="appendToOutput(6)">6</button>
+                <button type="button" value='7' onclick="appendToOutput(7)">7</button>
+                <button type="button" value='8' onclick="appendToOutput(8)">8</button>
             </div>
             <div>
-                <button type="button">9</button>
-                <button type="button">0</button>
-                <button type="button">=</button>
-                <button type="reset">C</button>
+                <button type="button" value='9' onclick="appendToOutput(9)">9</button>
+                <button type="button" value='0' onclick="appendToOutput(0)">0</button>
+                <button type="button" onclick="calculate()">=</button>
+                <button type="reset"  onclick="clearOutput()">C</button>
             </div>
         </div>
     </div>
+    <script>
+        function appendToOutput(input) {
+            document.getElementById('output').value += input;
+        }
+
+        function clearOutput() {
+            document.getElementById('output').value = '';
+        }
+        function calculate(){
+            document.getElementById('output').value = eval(document.getElementById('output').value)
+        }
+    </script>
 </body>
 </html>
