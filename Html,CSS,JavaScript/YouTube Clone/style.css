@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.934);
+}
+
+.navbar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 10px;
+    padding-inline: 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.navbar .logo .fa-bars {
+    color: white;
+    font-size: 25px;
+    padding: 8px 10px;
+    border-radius: 50%;
+}
+
+.navbar .logo .fa-bars:hover{
+    cursor: pointer;
+    background-color: rgba(48, 48, 48, 0.584);
+}
+
+.navbar .logo .fa-youtube{
+    color: red;
+    font-size: 25px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.navbar .logo span {
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.navbar .search{
+    height: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar .search .search-logo input[type='text']{
+    height: 35px;
+    width: 550px;
+    background-color: transparent;
+    border: 1.5px solid rgba(62, 61, 61, 0.434);
+    font-size: 18px;
+    padding-inline: 15px;
+    padding-block: 3px;
+    border-top-left-radius: 22.5px;
+    border-bottom-left-radius: 22.5px;
+}
+
+
+.navbar .search .search-logo .fa-magnifying-glass{
+    background-color: rgba(62, 61, 61, 0.434);
+    margin: -4px;
+    padding: 13.5px 25px;
+    border:none;
+    border-top-right-radius:22.5px;
+    border-bottom-right-radius: 22.5px;
+    cursor: pointer;
+}
+
+.navbar .search .fa-microphone{
+    margin-inline: 20px;
+    padding: 12.5px 15px;
+    border-radius: 50px;
+    background-color: rgba(62, 61, 61, 0.434);
+}
+
+.navbar .search .fa-microphone:hover{
+    cursor: pointer;
+    background-color: rgba(99, 98, 98, 0.462);
+}
+
+.navbar .right i{
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 12px 12px;
+    border-radius: 47.5%;
+    cursor: pointer;
+}
+
+.navbar .right i:hover{
+    background-color: rgba(99, 98, 98, 0.462);
+}
+
+.navbar .right span{
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    background-color: brown;
+    padding: 6px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+
+
+
