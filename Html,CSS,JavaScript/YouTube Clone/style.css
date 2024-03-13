@@ -37,11 +37,9 @@ body{
     background-color: rgba(48, 48, 48, 0.584);
 }
 
-.navbar .logo .fa-youtube{
-    color: red;
-    font-size: 25px;
-    margin-left: 15px;
-    cursor: pointer;
+.navbar .logo img{
+    height: 25px;
+    margin-left: 20px;
 }
 
 .navbar .logo span {
@@ -115,6 +113,59 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
+
+.sidebar_undetailed{
+    width: 80px;
+    height: 100vh;
+    margin: auto;
+    position:fixed;
+}
+
+.sidebar_undetailed .icons_menu {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.sidebar_undetailed .icons_menu .menu_home img{
+    height: 25px;
+}
+
+.sidebar_undetailed .icons_menu .menu_home i{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+.sidebar_undetailed .icons_menu .menu_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px 18px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar_undetailed .icons_menu .menu_home:hover{
+    background-color: rgba(99, 98, 98, 0.462);
+}
+
+.sidebar_undetailed .icons_menu .menu_home span{
+    color: aliceblue;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
 
 
 
