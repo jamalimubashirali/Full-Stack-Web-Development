@@ -7,15 +7,19 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.934);
+    position: relative;
 }
 
 .navbar{
     color: white;
     display: flex;
     justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
     align-items: center;
     padding-block: 10px;
     padding-inline: 20px;
+    position: sticky;
+    top: 0px;
 }
 
 .navbar .logo {
@@ -119,6 +123,7 @@ body{
     height: 100vh;
     margin: auto;
     position:fixed;
+    display: none;
 }
 
 .sidebar_undetailed .icons_menu {
@@ -127,7 +132,6 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: -1;
 }
 
 .sidebar_undetailed .icons_menu .menu_home img{
@@ -158,6 +162,98 @@ body{
     color: aliceblue;
     font-size: 0.8rem;
 }
+
+.sidebar_detailed {
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    color: aliceblue;
+    padding: 0px 15px;
+    /* margin-left: -300px; */
+}
+
+
+.sidebar_detailed{
+    z-index: 0;
+}
+
+.sidebar_detailed .menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar_detailed .menu .menu_home{
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar_detailed .menu .menu_home img{
+    height: 25px;
+    padding-right: 20px;
+}
+
+.sidebar_detailed .menu .menu_home i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.sidebar_detailed .common .content{
+    display: flex;
+    padding: 12px;
+    width: 100%;
+    align-items: center;
+}
+
+.sidebar_detailed .common h4{
+    padding: 12px;
+}
+
+.sidebar_detailed .common {
+    margin-block: 20px ;
+}
+
+
+.sidebar_detailed .common .content i{
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+.sidebar_detailed .common .content span,.sidebar_detailed .menu .menu_home span{
+    font-size: 0.9rem;
+}
+
+.sidebar_detailed .common .content img{
+    height: 25px;
+    padding-right: 20px;
+}
+
+.sidebar_detailed .common .content_links{
+    margin-block: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sidebar_detailed .common .content_links a{
+    text-decoration: none;
+    color: aliceblue;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar_detailed .sidebar_footer span{
+    padding: 10px;
+    font-size: 0.85rem;
+    color: rgba(63, 68, 72, 0.839);
+}
+
+
+
+
+
+
 
 
 
