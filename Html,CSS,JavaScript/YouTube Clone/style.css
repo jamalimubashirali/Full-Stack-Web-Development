@@ -10,8 +10,6 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.934);
-    position: relative;
-    display: grid;
     display: flex;
 }
 
@@ -183,7 +181,7 @@ body{
 
 .sidebar_detailed {
     margin-top: 75px;
-    width: 16%;
+    width: 15%;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
@@ -282,6 +280,8 @@ body{
 
 .main_content{
     margin-top: 80px;
+    display: block;
+    gap: 10px;
 }
 
 .main_content .frequently_chacked_links{
@@ -303,6 +303,49 @@ body{
 .main_content .frequently_chacked_links a:hover{
     background-color: rgba(99, 98, 98, 0.388); 
 }
+
+
+/* Videos styling */
+
+.main_videos{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main_videos .videos{
+    width: 25%;
+    height: 40%;
+    color: aliceblue;
+}
+
+.main_videos .videos video{
+    width: 120%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.main_videos .videos .Heading{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.main_videos .videos .channel{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.main_videos .videos .views_posted_date span{
+    margin-right: 20px;
+}
+
+
+
+
 
 
 
