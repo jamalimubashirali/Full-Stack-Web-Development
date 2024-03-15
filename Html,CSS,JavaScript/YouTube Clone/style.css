@@ -11,6 +11,8 @@
 body{
     background-color: rgba(0, 0, 0, 0.934);
     position: relative;
+    display: grid;
+    display: flex;
 }
 
 /* Styling for navigation bar */
@@ -182,10 +184,13 @@ body{
 .sidebar_detailed {
     margin-top: 75px;
     width: 16%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0);
     position: relative;
     color: aliceblue;
     padding: 0px 15px;
+    grid-column: 1 / 4;
+    grid-row: 2/ 12;
     /* margin-left: -300px; */
 }
 
@@ -273,7 +278,31 @@ body{
     color: rgba(63, 68, 72, 0.839);
 }
 
+/* Main content styling */
 
+.main_content{
+    margin-top: 80px;
+}
+
+.main_content .frequently_chacked_links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main_content .frequently_chacked_links a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 400;
+    padding: 8px;
+    margin-inline: 5px;
+    background-color: rgba(99, 98, 98, 0.165); 
+    border-radius: 5px;
+}
+
+.main_content .frequently_chacked_links a:hover{
+    background-color: rgba(99, 98, 98, 0.388); 
+}
 
 
 
