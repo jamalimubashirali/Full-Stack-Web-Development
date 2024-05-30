@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  div {
+    display: block;
+    text-align: center; 
+    margin: auto; 
+}
+    #increment-btn,button{
+        height: 40px;
+        width: 25vh;
+        font-weight: 700;
+        font-size: 25px;
+        background-color: rgba(0, 187, 255, 0.397);
+        cursor: pointer;
+        border-radius: 20px;
+        border: solid rgba(89, 88, 88, 0.361);
+    }
+
+    h2{
+        font-size: 40px;
+        font-weight: 800;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>People Entered : </h1>
+        <h2 id = "count-el">0</h2>
+        <button id="increment-btn" onclick="increment()">
+            INCREMENT
+        </button>
+        <button type="button" style="background-color: green;" id="save-btn">Save</button>
+        <p id="saved-el" style="font-weight: 700; font-size: 20px;">Previous entries : </p>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
