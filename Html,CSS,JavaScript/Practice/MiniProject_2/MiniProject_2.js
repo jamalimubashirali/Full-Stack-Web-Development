@@ -1,25 +1,25 @@
 let firstCard,secondCard,cardNum,sum;
-
 let message;
 let isAlive = true;
-
 let resultMessage = document.getElementById("message");
 let pageSum = document.getElementById("sum");
 let cards = document.getElementById("cards");
+let start = true;
 
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomInt() {
+    return Math.floor(Math.random() * 10) + 2;
 }
 
 function startGame(){
-    firstCard = getRandomInt(2,11);
-    secondCard = getRandomInt(2,11);
+    if(start){
+    firstCard = getRandomInt();
+    secondCard = getRandomInt();
     cardNum = firstCard + " " + secondCard;
     sum = firstCard + secondCard;
     showGame();
+    start = false;
+    }
     if(isAlive === false){
         cards.textContent = "Cards : " + cardNum;
         isAlive = true;
@@ -34,9 +34,11 @@ function showGame(){
     }else if(sum === 21){
         message = "You have got the BlackJack!";
         isAlive = false;
+        start = true;
     }else{
         message = "You're out of the game. Game Over";
         isAlive = false;
+        start = true;
     }
     resultMessage.textContent = message;
     pageSum.textContent = "Sum : " + sum;
@@ -45,7 +47,7 @@ function showGame(){
 
 function newCard () {
     if(isAlive){
-    cardNum = getRandomInt(2,11);
+    cardNum = getRandomInt();
     sum += cardNum;
     showGame();
     }
