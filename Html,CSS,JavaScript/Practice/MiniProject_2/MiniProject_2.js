@@ -20,7 +20,10 @@ function startGame(){
     cardNum = firstCard + " " + secondCard;
     sum = firstCard + secondCard;
     showGame();
-    
+    if(isAlive === false){
+        cards.textContent = "Cards : " + cardNum;
+        isAlive = true;
+    }
 }
 
 
