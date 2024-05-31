@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            background-color: rgba(26, 111, 11, 0.929);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .container{
+            margin: auto;
+            text-align: center;
+            display: block;
+            font-weight: bold;
+        }
+        .container h1{
+            color: rgba(255, 213, 0, 0.679);
+            font-size: 70px;
+        }
+        .container .message{
+            font-size: 30px;
+        }
+        .container p{
+            color: white;
+            font-size: 25px;
+        }
+        .container button{
+            font-size: 20px;
+            padding: 10px;
+            margin: 5px;
+            background-color: rgba(255, 213, 0, 0.679);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: rgba(26, 111, 11, 0.929);
+        }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <h1>BlackJack</h1>
+        <p class="message"><i id="message"> Want to play a round!</i></p>
+        <p id = "cards">Cards: </p>
+        <p id="sum">Sum: </p>
+        <button type="button" class="startGame-btn" onclick="startGame()">START GAME</button>
+        <button type="button" class="btn" onclick="newCard()">NEW CARD</button>
+    </div>
+    <script src="MiniProject_2.js"></script>
+</body>
+</html>
