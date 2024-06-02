@@ -1,25 +1,9 @@
-
-let count = 0;
-let peopleCount = 0;
-function increment(){
-    peopleCount++;
-    document.getElementById("count-el").innerText = peopleCount; 
+let airBnb = {
+    title :"The castle Room",
+    rooms : 3,
+    liked : false,
+    pics : ["Pic1", "Pic2", "Pic3"]
 }
 
-let saveText = document.getElementById('saved-el');
-
-
-document.getElementById("save-btn").onclick = function Save(){
-    count++;
-    let extension = peopleCount + " - ";
-    saveText.textContent += extension
-    peopleCount = 0;
-    document.getElementById("count-el").innerText = peopleCount;
-    
-    if(count > 3){
-        saveText.textContent = saveText.textContent.slice(0,-16);
-        count = 0;
-    }
-
-
-}
+console.log("An AirBnB Place contains");
+console.log(`${airBnb.rooms} Rooms and ${airBnb.pics}`);
