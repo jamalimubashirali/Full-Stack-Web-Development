@@ -1,40 +1,50 @@
-*{  
+* {  
     margin: 0px;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-nav{
-    max-height: 100px;
-    content:normal;
+
+nav {
+    max-height: 100%;
+    content: normal;
 }
-nav img{
+
+nav img {
     mix-blend-mode: multiply;
-    width:30%;
+    width: 30%;
     height: 5%;
 }
-#sec_1{
-    background-image: linear-gradient(white,blue);
+
+#sec_1 {
+    width: 100%;
+    background-image: linear-gradient(white, blue);
     content: normal;
     display: flex;
-    padding : 50px;
-    margin :auto;
+    /* flex-wrap: wrap; */
+    padding: 50px;
+    margin: auto;
 }
-#sec_1 .content p{
+
+#sec_1 .content p {
     padding-top: 150px;
     font-size: 60px;
     padding-right: 70px;
 }
-#sec_1 .content{
+
+#sec_1 .content {
     padding-inline: 70px;
 }
-#sec_1 .content p span{
+
+#sec_1 .content p span {
     font-weight: bolder;
 }
-#sec_1 .content button a{
+
+#sec_1 .content button a {
     text-decoration: none;
     color: black;
 }
-#sec_1 .content button{
+
+#sec_1 .content button {
     background: transparent;
     margin-left: 35px;
     margin-top: 30px;
@@ -43,26 +53,32 @@ nav img{
     padding-bottom: 10px;
     border-radius: 25px;
 }
-#sec_1 .content button:hover{
+
+#sec_1 .content button:hover {
     background-color: black;
 }
-#sec_1 .content button a:hover{
-    color:azure;
+
+#sec_1 .content button a:hover {
+    color: azure;
 }
-#sec_1 img{
+
+#sec_1 img {
     margin: 0%;
     float: right;
     width: 550px;
     padding-right: 90px;
 }
-#sec_2{
-    background-image: linear-gradient(blue,white);
+
+#sec_2 {
+    background-image: linear-gradient(blue, white);
     content: normal;
     display: flex;
-    padding : 50px;
-    margin :auto;
+    /* flex-wrap: wrap; */
+    padding: 50px;
+    margin: auto;
 }
-#sec_2 img{
+
+#sec_2 img {
     margin: 0%;
     margin-top: 80px;
     float: right;
@@ -70,31 +86,37 @@ nav img{
     padding-right: 10px;
     border-top-right-radius: 80px;
 }
-#sec_2 .content h5{
+
+#sec_2 .content h5 {
     padding-top: 140px;
     padding-left: 5px;
     font-size: 40px;
 }
-#sec_2 .content p{
+
+#sec_2 .content p {
     padding-top: 40px;
     text-align: justify;
     font-size: 25px;
     padding-right: 70px;
 }
-#sec_3{
-    background-image: linear-gradient(white,blue);
+
+#sec_3 {
+    background-image: linear-gradient(white, blue);
     content: normal;
-    padding : 80px;
-    margin :auto;
+    padding: 80px;
+    margin: auto;
 }
-#sec_3 .main{
+
+#sec_3 .main {
     background: transparent;
     content: normal;
     display: flex;
-    padding : 50px;
-    margin :auto;
+    /* flex-wrap: wrap; */
+    padding: 50px;
+    margin: auto;
 }
-.card{
+
+.card {
     text-align: center;
     background-color: white;
     padding: 20px;
@@ -102,25 +124,29 @@ nav img{
     border-bottom-left-radius: 30px;
     border-top-right-radius: 30px;
 }
-.card img{
+
+.card img {
     padding-bottom: 20px;
     width: 200px;
     border-top-right-radius: 20px;
 }
-.card h3{
+
+.card h3 {
     text-transform: capitalize;
     padding: 20px;
 }
-#sec_3 h1{
+
+#sec_3 h1 {
     text-align: center;
     font-size: 40px;
     margin-top: 80px;
 }
-#sec_3 .btn{
+
+#sec_3 .btn {
     text-align: center;
 }
-#sec_3 .btn button{
-    
+
+#sec_3 .btn button {
     background: transparent;
     margin-left: 35px;
     margin-top: 3px;
@@ -129,51 +155,116 @@ nav img{
     padding-bottom: 10px;
     border-radius: 25px;
 }
-#sec_3 button a{
+
+#sec_3 button a {
     text-decoration: none;
     color: black;
 }
-#sec_3 .btn button:hover{
+
+#sec_3 .btn button:hover {
     background-color: black;
 }
-#sec_3 .btn button a:hover{
+
+#sec_3 .btn button a:hover {
     color: aliceblue;
 }
-#sec_4{
-    background-image: linear-gradient(blue,white);
+
+#sec_4 {
+    background-image: linear-gradient(blue, white);
     content: normal;
     display: flex;
-    padding : 50px;
-    margin :auto;
+    flex-wrap: wrap;
+    padding: 50px;
+    margin: auto;
 }
-#sec_4 .main{
+
+#sec_4 .main {
     margin-top: 50px;
     margin-inline: 160px;
 }
-#sec_4 .main h1{
+
+#sec_4 .main h1 {
     float: left;
     font-size: 30px;
 }
 
-#sec_4 .main{
+#sec_4 .main {
     display: flex;
     margin-bottom: 200px;
 }
-#sec_4 .main .con{
+
+#sec_4 .main .con {
     margin-inline: 40px;
 }
-#sec_4 .main .con h4{
+
+#sec_4 .main .con h4 {
     padding-bottom: 13px;
 }
-#sec_4 .main .con p{
+
+#sec_4 .main .con p {
     padding-bottom: 3px;
 }
 
-@media screen and (max-width = 600px){
-    #sec_1{
-        overflow: hidden;
-        background-image: linear-gradient(white,blue);
-        content: normal;
-        padding : 50px;
+@media screen and (max-width: 600px) {
+    #sec_1 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #sec_1 .content p {
+        padding-top: 20px;
+        font-size: 30px;
+        padding-right: 0;
+    }
+
+    #sec_1 .content {
+        padding-inline: 20px;
+    }
+
+    #sec_1 img {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    #sec_2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #sec_2 img {
+        width: 100%;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    #sec_2 .content h5 {
+        padding-top: 20px;
+        font-size: 30px;
+    }
+
+    #sec_2 .content p {
+        font-size: 20px;
+        padding-right: 0;
+    }
+
+    #sec_3 .main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card {
+        margin-inline: 10px;
+    }
+
+    #sec_4 {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #sec_4 .main {
+        flex-direction: column;
+        margin-inline: 20px;
+        margin-bottom: 50px;
     }
 }
