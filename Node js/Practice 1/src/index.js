@@ -1,10 +1,9 @@
-import express from "express";
 import connetDB from "./db/connection.js";
 import dotenv from "dotenv";
-const app = express()
+import { app } from "./app.js";
 
 dotenv.config( {
-    path : "./env"
+    path : "./.env"
 })
 
 connetDB().then(() => {
